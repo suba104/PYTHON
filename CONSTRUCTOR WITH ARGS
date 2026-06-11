@@ -1,0 +1,9 @@
+class rect:
+    def  __init__ (self,a,b):
+        self.l=a 
+        self.b=b
+        self.display()
+    def display(self):
+        print("the area is:",self.l*self.b)
+S=rect(20,19)
+r=rect(12,15)
