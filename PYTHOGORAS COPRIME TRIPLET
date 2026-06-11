@@ -1,0 +1,16 @@
+def cop(a,b):
+    return max(a,b)==1
+def max(a,b):
+    while(b!=0):
+        rem=a%b 
+        temp=b
+        b=rem
+        a=temp
+    return(a)
+n=int(input("enter any number:"))
+for c in range(5,n):
+    for b in range(4,c):
+        for a in range(3,b):
+            if (a*a+b*b==c*c and cop(a,b) and cop(b,c) and (a,c)):
+                print(c,b,a)
+              
