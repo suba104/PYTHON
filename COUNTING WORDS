@@ -1,0 +1,6 @@
+a = input("ENTER THE PARAGRAPH : ")
+c = 1  
+for i in range(len(a) - 1):
+    if a[i] == " " and a[i + 1] != " ":
+        c = c+ 1
+print(c)
